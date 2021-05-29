@@ -15,7 +15,10 @@ export const EnvironmentButton: React.FC<EnvironmentButtonProps> = ({
   ...rest
 }) => {
   return (
-    <RectButton style={[styles.container, active && styles.containerActive]} {...rest}>
+    <RectButton
+      style={[styles.container, active && styles.containerActive]}
+      {...rest}
+    >
       <Text style={[styles.text, active && styles.textActive]}>{title}</Text>
     </RectButton>
   );
@@ -41,5 +44,5 @@ const styles = StyleSheet.create({
   textActive: {
     fontFamily: fonts.heading,
     color: colors.green_dark,
-  }
+  },
 });
