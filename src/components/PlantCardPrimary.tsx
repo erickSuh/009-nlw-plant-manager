@@ -12,7 +12,7 @@ interface PlantProps extends RectButtonProps {
   };
 }
 
-const PlantCardPrimary: React.FC<PlantProps> = ({ data, ...props }) => {
+export const PlantCardPrimary: React.FC<PlantProps> = ({ data, ...props }) => {
   return (
     <RectButton style={styles.container} {...props}>
       <SvgFromUri uri={data.photo} width={70} height={70} />
@@ -37,5 +37,3 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
 });
-
-export default PlantCardPrimary;
